@@ -18,9 +18,8 @@ document.body.children[6].children[2]
 
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
 
-// console.log(document.body.children[5].length);
-
-document.querySelectorAll('li');
+let ul = document.body.children[5];
+console.log(`The length of the element is ${ul.children.length}`);
 
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
 
@@ -40,11 +39,11 @@ let inputCheckbox = document.querySelector('#remember');
 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
 
-let password = document.querySelector('input[type = "text"]')
+let password = document.querySelector('input[type = "password"]')
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
-let attrPassword = document.querySelector('input["placeholder = password"]');
+let attrPassword = document.querySelector('input[placeholder = "password"]');
 
 // 10. Select all the `li` element and store in `allTopics`
 
@@ -52,7 +51,7 @@ let allTopics = document.querySelectorAll('li');
 
 // 11. Select all the input element of any type and store in `allInput`
 
-let allInput = document.querySelector('input');
+let allInput = document.querySelectorAll('input');
 
 // 12. Use forEach to console the `innerText` property of all the li element in `allTopics` variable.
 
@@ -68,7 +67,8 @@ let firstLi = document.querySelector('ul>li');
 
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 
-(document.querySelectorAll('img')).length;
+let allImg = document.querySelectorAll('img');
+console.log(`The total number of img element is ${allImg.length}`);
 
 // 16. Select all the `p` element and store in `allPElement`
 
@@ -76,11 +76,13 @@ let allPElement = document.querySelectorAll('p');
 
 // 17. Select all the buttons and log the count of buttons.
 
-console.count(document.querySelector('input[type = "submit"]'));
+let allButtons = document.querySelectorAll('botton');
+
+console.log(allButtons.length);
 
 // 18. Select all the `label` element and log the count.
 
-(document.querySelectorAll('label')).length
+console.log(document.querySelectorAll('label').length);
 
 // 19. Select all the elements with `id` of `test`
 
@@ -100,11 +102,11 @@ console.log(topics.nextElementSibling);
 
 // 23. Select the previous element sibling of the element stored in `topics` variable (#5) and change the `innerText` property to `Learning About Walking the DOM`.
 
-console.log(topics.previousElementSibling).innerText = "property to `Learning About Walking the DOM";
+console.log(topics.previousElementSibling.innerText = "Learning About Walking the DOM");
 
 // 24. Select the first element child of the element stored in `topics` variable (#5) and change the `innerText` property of the element to `This is the first child element`.
 
-document.body.children[5].querySelector()
+console.log(topics.firstElementChild.innerText = "This is the first child element")
 
 // 25. Select the last element child of the element stored in `topics` variable (#5) and log the `typeof` the element.
 
