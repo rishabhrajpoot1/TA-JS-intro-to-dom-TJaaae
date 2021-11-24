@@ -114,7 +114,7 @@ console.log(typeof topics.lastElementChild);
 
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
 
-let fieldsetElm = document.querySelectorAll('fieldset');
+let fieldsetElm = document.querySelector('fieldset');
 
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
 
