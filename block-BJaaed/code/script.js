@@ -124,7 +124,6 @@
    let tittle = document.createElement('h2');
    let author = document.createElement('p');
    let btn = document.createElement('button');
-   let div = document.createElement('div');
 
    img.src = element.image
    author.innerText = element.author
