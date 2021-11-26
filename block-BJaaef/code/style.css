@@ -91,7 +91,6 @@ img{
 }
 
 button{
-  color: rgb(62,90,186);
   background-color: rgb(231,237,253);
   padding: 0.3rem 7.4rem;
   border: none;
@@ -110,4 +109,9 @@ p{
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(62,90,186) ;
 }

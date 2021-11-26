@@ -348,14 +348,17 @@ let got = {
         let p = document.createElement('p');
         p.innerText = element.description
         let btn = document.createElement('button')
-        btn.innerText = "Learn More!"
+        let a = document.createElement('a')
+        a.href = element.wikiLink
+        a.innerText = "Learn More!" 
+        btn.append(a)
         let div = document.createElement('div')
         div.append(img, h2)
         div.classList.add('info')
 
         li.classList.add('box')
         rootElement.classList.add('container')
-        li.append(div,  p ,btn);
+        li.append(div,  p, btn);
          rootElement.append(li)
         })
   });
